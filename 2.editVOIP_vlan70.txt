@@ -1,0 +1,7 @@
+int range fa0/6
+no switchport access vlan 70
+switchport voice vlan 70
+exit
+do wr
+chọn cổng fa0/6 để cấu hình.
+

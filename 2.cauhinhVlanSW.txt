@@ -1,0 +1,19 @@
+HL-SW(config)#int range fa0/3-4
+HL-SW(config-if-range)#switchport mode access
+HL-SW(config-if-range)#switchport access vlan 20
+HL-SW(config-if-range)#ex
+HL-SW(config)#
+HL-SW(config)#int range fa0/5-6
+HL-SW(config-if-range)#switchport mode access
+HL-SW(config-if-range)#switchport access vlan 70
+HL-SW(config-if-range)#ex
+HL-SW(config)#
+HL-SW(config)#int fa0/7
+HL-SW(config-if)#switchport mode access
+HL-SW(config-if)#switchport access vlan 50
+HL-SW(config-if)#ex
+HL-SW(config)#
+HL-SW(config)#int range fa0/8-24, gig0/1-2
+HL-SW(config-if-range)#switchport mode access
+HL-SW(config-if-range)#switchport access vlan 199
+HL-SW(config-if-range)#shut

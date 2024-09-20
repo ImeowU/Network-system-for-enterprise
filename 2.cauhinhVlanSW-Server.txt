@@ -1,0 +1,29 @@
+int range fa0/1-2, fa0/4
+switchport mode trunk
+exit
+
+vlan 10
+name MGT
+vlan 20
+name LAN
+vlan 50 
+name WLAN
+vlan 70 
+name VOIP
+vlan 90
+name INSIDE SERVERs
+ex
+
+int range fa0/5-7
+switchport mode access
+switchport access vlan 90
+ex
+
+int range fa0/3
+switchport mode access
+switchport access vlan 50
+ex
+
+do wr
+
+
